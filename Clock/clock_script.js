@@ -22,9 +22,11 @@ function Clock (hours, minutes, seconds){
     };
 }
 
-function update() {
-    var time = new Date();
-    current_clock = new Clock(time.getHours(), time.getMinutes(), time.getSeconds());
+function update(current_clock, current_time) {
+    current_time = new Date();
+    current_clock.hours = current_time.getHours();
+    current_clock.minutes = current_time.getMinutes();
+    current_clock.seconds = current_time.getSeconds();
     if (current_clock.mode === false) {
         current_clock.add_zero();
         current_clock.shown = current_clock.hours + ":" + current_clock.minutes + ":" + current_clock.seconds;
@@ -44,4 +46,6 @@ function update() {
     document.getElementById("clock").textContent = current_clock.shown;
 }
 
-setInterval(function() {update();},1000);
+var current_time = new Date();
+current_clock = new Clock(time.getHours(), time.getMinutes(), time.getSeconds());
+setInterval(function() {update(current_clock, current_time);},1000);
