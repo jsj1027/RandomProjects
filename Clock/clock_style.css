@@ -1,0 +1,10 @@
+body{
+    background-color: crimson;
+}
+
+.clock{
+    position: center;
+    top: 50%;
+    bottom: 50%;
+    color: black;
+}
