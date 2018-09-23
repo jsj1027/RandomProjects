@@ -2,7 +2,7 @@ function Clock (hours, minutes, seconds){
     this.hours = hours;
     this.minutes = minutes;
     this.seconds = seconds;
-    this.mode = false; //If False it is in 24 hour time.
+    this.mode = false; //If False it is in 24 hour current_time.
     this.day_half = "AM"; //Default
     this.shown = "";
     this.add_zero = function () {
@@ -46,6 +46,6 @@ function update(current_clock, current_time) {
     document.getElementById("clock").textContent = current_clock.shown;
 }
 
-var current_time = new Date();
-current_clock = new Clock(time.getHours(), time.getMinutes(), time.getSeconds());
+var current_time;
+var current_clock = new Clock(0, 0, 0);
 setInterval(function() {update(current_clock, current_time);},1000);
