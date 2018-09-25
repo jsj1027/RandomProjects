@@ -3,16 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Clock</title>
-        <link rel="stylesheet" href="C:/../....\..\..\..\Program Files\nodejs\node_modules\bootstrap\dist\css\bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="clock_style.css">
     </head>
     <body>
         <div id=clock class="clock"></div>
         <script src="clock_script.js"> </script>
-        <button class="button text_button">Hello</button>
-        <button class="button text_button">Hello</button>
-        <button class="button text_button">Hello</button>
-        <button class="button background_button">Hello</button>
-        <button class="button background_button">Hello</button>
-        <button class="button background_button">Hello</button>
+        <div class="btn-group align-shelf-top">
+            <button class="btn btn-primary button text_button">Hello</button>
+            <button class="btn btn-primary button text_button">Hello</button>
+            <button class="btn btn-primary button text_button">Hello</button>
+        </div>
+        <!--
+        <div class="btn-group">
+            <button class="btn btn-primary button background_button">Hello</button>
+            <button class="btn btn-primary button background_button">Hello</button>
+            <button class="btn btn-primary button background_button">Hello</button>
+        </div>
+        -->
     </body>
 </html>
