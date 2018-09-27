@@ -1,0 +1,14 @@
+.body {
+    background: #0069d9;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+.form {
+    align-items: center;
+}
