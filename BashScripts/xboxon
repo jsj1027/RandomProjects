@@ -1,0 +1,8 @@
+#!/bin/bash
+	LCyan='\033[1;36m'
+	NC='\033[0m' # No Color
+
+	STRING="Xbox On"
+	echo -e "$LCyan$STRING$NC"
+
+	sudo xboxdrv --silent

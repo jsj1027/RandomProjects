@@ -1,0 +1,12 @@
+#!/bin/bash
+	LCyan='\033[1;36m'
+	NC='\033[0m' # No Color
+
+	STRING="Getting latest"
+	echo -e "$LCyan$STRING$NC"
+
+	sudo apt update
+	sudo apt upgrade
+
+	FinString="Update complete"
+	echo -e "$LCyan$FinString$NC"
