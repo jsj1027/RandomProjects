@@ -5,4 +5,4 @@
 	STRING="Xbox On"
 	echo -e "$LCyan$STRING$NC"
 
-	sudo xboxdrv --silent
+	sudo xboxdrv --silent --detach-kernel-driver
