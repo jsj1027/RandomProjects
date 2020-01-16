@@ -4,9 +4,9 @@ if [ "$1" == "nvidia" ]; then
 	echo "nvidia switch"
 	sudo system76-power graphics nvidia
 	system76-power graphics power on
-	systemctl restart display-manager
+	sudo systemctl restart display-manager
 elif [ "$1" == "intel" ]; then
 	echo "intel switch"
 	sudo system76-power graphics intel
-	systemctl restart display-manager
+	sudo systemctl restart display-manager
 fi
