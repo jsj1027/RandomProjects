@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o errtrace
+set -o pipefail
+
+FILE="rpcs3.AppImage"
+URL="https://rpcs3.net/latest-appimage"
+APPIMGDIR="/home/kaloshade/AppImages"
+TEMPDOWNLOAD="/home/kaloshade/rpcs3-new.AppImage"
+
+pushd "${APPIMGDIR}"
+
+axel -a -n 8 "${URL}" -o "${TEMPDOWNLOAD}"
+
+rm -f "${FILE}"
+
+mv -f "${TEMPDOWNLOAD}" "${FILE}"
+
+exit 0
+
+
